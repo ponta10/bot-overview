@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy</title>
+</head>
+<body style="margin: 60px;">
+  <h1>Privacy Policy</h1>
+  <p>This Privacy Policy outlines how this service (hereinafter referred to as "the Service") collects, uses, and manages user information.</p>
+
+  <h2>1. Service Overview</h2>
+  <p>The Service is a Discord Bot designed to integrate Discord, LINE, and Google Calendar to enhance community engagement.</p>
+  <p>The bot is not publicly available and is used solely in a closed environment by the developer for personal use.</p>
+
+  <h2>2. Information Collected</h2>
+  <p>The Service collects the following user information:</p>
+  <table border="1" cellpadding="8" cellspacing="0">
+    <thead>
+      <tr>
+        <th>Information Collected</th>
+        <th>Purpose of Use</th>
+        <th>Retention Period</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Google OAuth Token</td>
+        <td>To access the Google Calendar API</td>
+        <td>Until account deactivation or upon user request for deletion</td>
+      </tr>
+      <tr>
+        <td>Google Email Address</td>
+        <td>To invite users to Google Calendar events</td>
+        <td>Until account deactivation or upon user request for deletion</td>
+      </tr>
+      <tr>
+        <td>Discord Event ID and Google Calendar Event ID Mapping</td>
+        <td>For event management purposes</td>
+        <td>Until account deactivation or upon user request for deletion</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>3. Purpose of Use</h2>
+  <ul>
+    <li>To create events through integration with the Google Calendar API</li>
+    <li>To invite event organizers and participants to Google Calendar events</li>
+    <li>To maintain Google OAuth authentication status (token refresh)</li>
+    <li>To collect logs for service improvement and troubleshooting (only in the event of errors)</li>
+  </ul>
+
+  <h2>4. Information Management</h2>
+  <ul>
+    <li>Google OAuth tokens are encrypted using Google Cloud KMS and stored in a SQLCipher (AES-256 encrypted) database.</li>
+    <li>Email addresses are also securely stored in the encrypted database to prevent unauthorized access.</li>
+    <li>Encryption keys are securely managed using Fly.io Secret Manager.</li>
+    <li>All communications are enforced via HTTPS to prevent data leakage during transmission.</li>
+  </ul>
+
+  <h2>5. Information Sharing</h2>
+  <p>Collected information will not be shared with or disclosed to third parties, except in the following cases:</p>
+  <ul>
+    <li>When required by law</li>
+    <li>When the user provides explicit consent</li>
+  </ul>
+
+  <h2>6. User Rights and Information Management</h2>
+  <p>Users have the following rights regarding their information:</p>
+  <ul>
+    <li>Request access to their collected information</li>
+    <li>Request correction or deletion of their information</li>
+    <li>Request to stop the collection or storage of their information</li>
+  </ul>
+  <p>For any such requests, please contact the bot administrator via Discord DM or through the designated channel. We will respond promptly.</p>
+
+  <h2>7. Use of Cookies</h2>
+  <p>The Service does not use cookies, as it is provided as a Discord Bot rather than a website.</p>
+
+  <h2>8. Changes to the Privacy Policy</h2>
+  <p>This policy may be updated as necessary to comply with legal requirements or to improve the Service.</p>
+  <p>Any changes will be announced through the Discord channel or within the Service.</p>
+
+  <h2>9. Contact</h2>
+  <p>For inquiries regarding this Privacy Policy, please contact the bot administrator via Discord DM or through the designated channel.</p>
+  <a href="index.html">Service Overview</a>
+</body>
+</html>

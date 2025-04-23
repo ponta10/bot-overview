@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Service Overview</title>
+</head>
+<body style="margin: 60px;">
+  <h1>Service Overview</h1>
+  <p>This service is a Discord Bot designed to integrate Discord, LINE, and Google Calendar to streamline community event management and notifications.</p>
+  <p>The bot is not publicly available and is used solely in a closed environment by the developer for personal use.</p>
+  <p>The purpose of this bot is to centralize event creation, sharing, and notifications within the community to enhance communication and increase member participation.</p>
+
+  <hr />
+
+  <h2>Main Features</h2>
+  <ul>
+    <li>
+      <strong>Event Notifications in Discord Channels</strong><br />
+      When an event is created in Discord, the bot automatically sends a notification to the designated Discord channel.
+    </li>
+    <li>
+      <strong>LINE Notifications & Participation Button on Event Creation</strong><br />
+      When an event is created, the bot sends a notification to a LINE group with a participation button containing the event link.
+    </li>
+    <li>
+      <strong>LINE Notifications on Voice Channel Join</strong><br />
+      When a user joins a Discord voice channel, the bot sends a notification to the LINE group.
+    </li>
+    <li>
+      <strong>Cross-Platform Messaging Command</strong><br />
+      Using a Discord slash command, users can send messages to both Discord and LINE simultaneously.
+    </li>
+    <li>
+      <strong>Automatic Google Calendar Event Creation</strong><br />
+      Events created in Discord are automatically registered in Google Calendar and shared with organizers and participants.
+    </li>
+    <li>
+      <strong>Google Calendar Invitation via "Interested" Button</strong><br />
+      When a user clicks the "Interested" button in a Discord event, they are automatically invited to the corresponding Google Calendar event.
+    </li>
+    <li>
+      <strong>Google Calendar Integration Notification on Server Join</strong><br />
+      When a new member joins the server, the bot sends a message guiding them to integrate with Google Calendar.
+    </li>
+  </ul>
+
+  <hr />
+
+  <h2>About Google OAuth Usage</h2>
+  <p>This bot uses Google OAuth authentication to integrate with the Google Calendar API.</p>
+  <p>The information obtained and its purposes are as follows:</p>
+  <table border="1" cellpadding="8" cellspacing="0">
+    <thead>
+      <tr>
+        <th>Information Collected</th>
+        <th>Purpose of Use</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Google OAuth Token</td>
+        <td>To access the Google Calendar API (event creation and attendee invitations)</td>
+      </tr>
+      <tr>
+        <td>Email Address</td>
+        <td>To register users as attendees for Google Calendar events</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>Tokens are encrypted using Google Cloud KMS and securely stored in a SQLCipher-encrypted (AES-256) database.</p>
+  <p>Email addresses are also securely stored in the same encrypted database.</p>
+  <p>All collected information will be promptly deleted upon user request.</p>
+
+  <hr />
+
+  <h2>Security and Data Management</h2>
+  <ul>
+    <li>Dual encryption using Google Cloud KMS and SQLCipher (AES-256)</li>
+    <li>Secure key management with Fly.io Secret Manager</li>
+    <li>Enforced HTTPS communication to protect all data transmissions</li>
+    <li>Notification of successful authentication via Discord channel</li>
+    <li>Prompt response to user data deletion requests</li>
+  </ul>
+
+  <hr />
+
+  <h2>Disclaimer</h2>
+  <p>This bot is intended solely for personal use by the developer and is not publicly available.</p>
+  <p>The collected information is used strictly within the scope necessary to provide the bot’s functions and will not be shared with third parties unless required by law or with user consent.</p>
+
+  <hr />
+
+  <h2>Contact</h2>
+  <p>For any inquiries regarding this service, please contact the bot administrator via Discord DM or in the designated Discord channel.</p>
+  <a href="privacy.html">Privacy Policy</a>
+</body>
+</html>
